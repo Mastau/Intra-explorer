@@ -1,0 +1,51 @@
+Intra Explorer
+
+Stack:
+Golang
+API RESTFUL (Voler la data a 42)
+Front (Template HTMX)
+
+
+
+User list (user boucle login list (same as usual))
+Projet (New register, closed project, evaluated project, retry, new team, team with ect...) lié a une personne
+Evaluation (Eval effectué, commentaire recu / donné)
+
+
+
+API ENDPOINT (Read doc & test)
+- https://api.intra.42.fr/apidoc/2.0/events_users.html
+- https://api.intra.42.fr/apidoc/2.0/feedbacks.html
+- https://api.intra.42.fr/apidoc/2.0/locations.html
+- https://api.intra.42.fr/apidoc/2.0/projects.html
+- https://api.intra.42.fr/apidoc/2.0/projects_users.html
+- https://api.intra.42.fr/apidoc/2.0/scale_teams.html
+- https://api.intra.42.fr/apidoc/2.0/teams.html
+- https://api.intra.42.fr/apidoc/2.0/teams_users.html
+- https://api.intra.42.fr/apidoc/2.0/transactions.html
+- https://api.intra.42.fr/apidoc/2.0/users.html
+
+
+Back-end > loop call api > stockage en brut db
+
+Post traitement back ? parse json & update data for each users > si une data a changé / evolué > la remonter dans le feed
+
+Create list custom (Follow users and get data)
+
+
+
+
+
+AFFICHAGE Feedbacks
+
+Recuperation list User (Infos users);
+- v2/campus/31/pool=2022/2023/2024
+One time > list all users;
+- List all user : filter by pool year;
+On stock, login, userIdIntra, pp link, name 
+
+Quand follow un user >
+	-Check dans DB si user est dans la queueList, si absent on l'ajoute
+	- Recherche user et followuser
+
+Grab GET /v2/users/:user_id/scale_teams UNIQUEMENT QUAND L'USER est follow by someone;
