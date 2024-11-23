@@ -1,4 +1,5 @@
 client/data/*.json
 client/.env
+server/node_modules/
 crawler/.env
 server/.env
