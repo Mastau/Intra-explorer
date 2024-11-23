@@ -1,0 +1,4 @@
+client/data/*.json
+client/.env
+crawler/.env
+server/.env
