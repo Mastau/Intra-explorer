@@ -2,10 +2,17 @@
   "name": "server",
   "module": "server.js",
   "type": "module",
+  "scripts": {
+    "start": "bun --env-file=.env server.js"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "express-session": "^1.18.1"
   }
 }

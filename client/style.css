@@ -1,0 +1,18 @@
+#logo-42 {
+    width: 10%;
+}
+
+.cta-button{
+    background-color: black;
+    border: none;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    width: 50%;
+    
+}
+
+.cta-button:hover{
+    background-color: #0f0f0f;
+}
